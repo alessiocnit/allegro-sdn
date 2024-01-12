@@ -1,0 +1,28 @@
+<org-openroadm-device xmlns="http://org/openroadm/device">
+  <interface>
+     <name>NMC-CTP-DEG1-TX-193.3</name>
+     <description>Network-Media-Channel-CTP-193.3THz-degree-1-out</description>
+     <type>openROADM-if:networkMediaChannelConnectionTerminationPoint</type>
+     <administrative-state>inService</administrative-state>
+     <supporting-circuit-pack-name>DEG1-AMPTX</supporting-circuit-pack-name>
+     <supporting-interface-list>MC-TTP-DEG1-TX-193.3</supporting-interface-list>
+     <supporting-port>DEG1-AMPTX-OUT</supporting-port>
+     <nmc-ctp xmlns="http://org/openroadm/network-media-channel-interfaces">
+        <frequency>193.30</frequency>
+        <width>100</width>
+     </nmc-ctp>
+  </interface>
+  <interface>
+     <name>NMC-CTP-DEG1-RX-193.3</name>
+     <description>Network-Media-Channel-CTP-193.3THz-degree-1-in</description>
+     <type>openROADM-if:networkMediaChannelConnectionTerminationPoint</type>
+     <administrative-state>inService</administrative-state>
+     <supporting-circuit-pack-name>DEG1-AMPRX</supporting-circuit-pack-name>
+     <supporting-port>DEG1-AMPRX-IN</supporting-port>
+     <supporting-interface-list>MC-TTP-DEG1-RX-193.3</supporting-interface-list>
+     <nmc-ctp xmlns="http://org/openroadm/network-media-channel-interfaces">
+        <frequency>193.30</frequency>
+        <width>100</width>
+     </nmc-ctp>
+  </interface>
+</org-openroadm-device>

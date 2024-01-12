@@ -1,0 +1,13 @@
+<org-openroadm-device xmlns="http://org/openroadm/device">
+  <roadm-connections>
+    <connection-name>NMC-CTP-DEG1-193.3-to-NMC-CTP-DEG3-193.3</connection-name>
+    <opticalControlMode>off</opticalControlMode>
+    <target-output-power>0</target-output-power>
+    <source>
+      <src-if>NMC-CTP-DEG1-TX-193.3</src-if>
+    </source>
+    <destination>
+      <dst-if>NMC-CTP-DEG3-RX-193.3</dst-if>
+    </destination>
+  </roadm-connections>
+</org-openroadm-device>

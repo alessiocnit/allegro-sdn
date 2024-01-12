@@ -1,0 +1,26 @@
+<org-openroadm-device xmlns="http://org/openroadm/device">
+  <interface>
+     <name>SRG1-PP01-TX-193.3</name>
+     <description>Network-Media-Channel-CTP-193.3THz-srg-1-out</description>
+     <type>openROADM-if:networkMediaChannelConnectionTerminationPoint</type>
+     <administrative-state>inService</administrative-state>
+     <supporting-circuit-pack-name>SRG1-CS</supporting-circuit-pack-name>
+     <supporting-port>SRG1-CS-OUT1</supporting-port>
+     <nmc-ctp xmlns="http://org/openroadm/network-media-channel-interfaces">
+        <frequency>193.30</frequency>
+        <width>100</width>
+     </nmc-ctp>
+  </interface>
+  <interface>
+     <name>SRG1-PP01-RX-193.3</name>
+     <description>Network-Media-Channel-CTP-193.3THz-srg-1-in</description>
+     <type>openROADM-if:networkMediaChannelConnectionTerminationPoint</type>
+     <administrative-state>inService</administrative-state>
+     <supporting-circuit-pack-name>SRG1-CS</supporting-circuit-pack-name>
+     <supporting-port>SRG1-CS-IN1</supporting-port>
+     <nmc-ctp xmlns="http://org/openroadm/network-media-channel-interfaces">
+        <frequency>193.30</frequency>
+        <width>100</width>
+     </nmc-ctp>
+  </interface>
+</org-openroadm-device>
