@@ -1,3 +1,9 @@
+<?xml version="1.0"?>
+<edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <target>
+    <running/>
+  </target>
+  <config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
 <org-openroadm-device xmlns="http://org/openroadm/device">
   <interface>
      <name>NMC-CTP-DEG1-TX-193.3</name>
@@ -26,3 +32,5 @@
      </nmc-ctp>
   </interface>
 </org-openroadm-device>
+  </config>
+</edit-config>

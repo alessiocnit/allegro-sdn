@@ -1,3 +1,9 @@
+<?xml version="1.0"?>
+<edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <target>
+    <running/>
+  </target>
+  <config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
 <org-openroadm-device xmlns="http://org/openroadm/device">
   <roadm-connections>
     <connection-name>NMC-CTP-DEG1-193.3-to-NMC-CTP-DEG3-193.3</connection-name>
@@ -11,3 +17,6 @@
     </destination>
   </roadm-connections>
 </org-openroadm-device>
+  </config>
+</edit-config>
+

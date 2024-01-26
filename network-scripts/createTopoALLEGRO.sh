@@ -23,19 +23,19 @@ echo "--- OCTP-1 screen t1 IP 10.100.101.21"
 
 echo "Creating ROADMs..."
 echo "--- ROADM-1 screen r1 IP 10.100.101.11"
-screen -dmS r1 -T xterm sh -c 'docker run --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.11 -p 127.0.0.1:3011:830 --name roadm1 -it tim.it/roadm-9deg:3.0'
+screen -dmS r1 -T xterm sh -c 'docker run --security-opt seccomp=unconfined --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.11 -p 127.0.0.1:3011:830 --name roadm1 -it tim.it/roadm-9deg:3.0'
 sleep 2
 
 echo "--- ROADM-2 screen r2 IP 10.100.101.12"
-screen -dmS r2 -T xterm sh -c 'docker run --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.12 -p 127.0.0.1:3012:830 --name roadm2 -it tim.it/roadm-9deg:3.0'
+screen -dmS r2 -T xterm sh -c 'docker run --security-opt seccomp=unconfined --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.12 -p 127.0.0.1:3012:830 --name roadm2 -it tim.it/roadm-9deg:3.0'
 sleep 2
 
 echo "--- ROADM-3 screen r3 IP 10.100.101.13"
-screen -dmS r3 -T xterm sh -c 'docker run --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.13 -p 127.0.0.1:3013:830 --name roadm3 -it tim.it/roadm-9deg:3.0'
+screen -dmS r3 -T xterm sh -c 'docker run --security-opt seccomp=unconfined --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.13 -p 127.0.0.1:3013:830 --name roadm3 -it tim.it/roadm-9deg:3.0'
 sleep 2
 
 echo "--- ROADM-4 screen r4 IP 10.100.101.14"
-screen -dmS r4 -T xterm sh -c 'docker run --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.14 -p 127.0.0.1:3014:830 --name roadm4 -it tim.it/roadm-9deg:3.0'
+screen -dmS r4 -T xterm sh -c 'docker run --security-opt seccomp=unconfined --mount type=bind,src=/home/alessio/allegro-sdn/emulator-openroadm/datastore,dst=/usr/local/etc/org-openroadm/datastore --net=netbr0 --ip=10.100.101.14 -p 127.0.0.1:3014:830 --name roadm4 -it tim.it/roadm-9deg:3.0'
 sleep 2
 
 echo "Uploading OpenConfig xml schema"

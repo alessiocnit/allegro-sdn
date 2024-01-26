@@ -12,7 +12,7 @@
         "gridX" : 100,
         "gridY" : 750,
         "name": "ROADM-2",
-        "driver": "openroadm"
+        "driver": "openroadm12"
       }
     }
   }

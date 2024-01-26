@@ -1,28 +1,37 @@
-<org-openroadm-device xmlns="http://org/openroadm/device" xmlns:openROADM-if="http://org/openroadm/interfaces">
-  <interface>
-    <name>MC-TTP-DEG1-RX-193.3</name>
-    <description>Media-Channel-TTP-193.3THz-degree-1-in</description>
-    <type>openROADM-if:mediaChannelTrailTerminationPoint</type>
-    <administrative-state>inService</administrative-state>
-    <supporting-circuit-pack-name>DEG1-AMPRX</supporting-circuit-pack-name>
-    <supporting-port>DEG1-AMPRX-IN</supporting-port>
-    <supporting-interface-list>OMS-DEG1-TTP-RX</supporting-interface-list>
-    <mc-ttp xmlns="http://org/openroadm/media-channel-interfaces">
-      <min-freq>193.25</min-freq>
-      <max-freq>193.35</max-freq>
-    </mc-ttp>
-  </interface>
-  <interface>
-    <name>MC-TTP-DEG1-TX-193.3</name>
-    <description>Media-Channel-TTP-193.3THz-degree-1-out</description>
-    <type>openROADM-if:mediaChannelTrailTerminationPoint</type>
-    <administrative-state>inService</administrative-state>
-    <supporting-circuit-pack-name>DEG1-AMPTX</supporting-circuit-pack-name>
-    <supporting-port>DEG1-AMPTX-OUT</supporting-port>
-    <supporting-interface-list>OMS-DEG1-TTP-TX</supporting-interface-list>
-    <mc-ttp xmlns="http://org/openroadm/media-channel-interfaces">
-      <min-freq>193.25</min-freq>
-      <max-freq>193.35</max-freq>
-    </mc-ttp>
-  </interface>
-</org-openroadm-device>
+<?xml version="1.0"?>
+<edit-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <target>
+    <running/>
+  </target>
+  <config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <org-openroadm-device xmlns="http://org/openroadm/device" xmlns:openROADM-if="http://org/openroadm/interfaces">
+      <interface>
+        <name>MC-TTP-DEG1-RX-193.3</name>
+        <description>Media-Channel-TTP-193.3THz-degree-1-in</description>
+        <type>openROADM-if:mediaChannelTrailTerminationPoint</type>
+        <administrative-state>inService</administrative-state>
+        <supporting-circuit-pack-name>DEG1-AMPRX</supporting-circuit-pack-name>
+        <supporting-port>DEG1-AMPRX-IN</supporting-port>
+        <supporting-interface-list>OMS-DEG1-TTP-RX</supporting-interface-list>
+        <mc-ttp xmlns="http://org/openroadm/media-channel-interfaces">
+          <min-freq>193.25</min-freq>
+          <max-freq>193.35</max-freq>
+        </mc-ttp>
+      </interface>
+      <interface>
+        <name>MC-TTP-DEG1-TX-193.3</name>
+        <description>Media-Channel-TTP-193.3THz-degree-1-out</description>
+        <type>openROADM-if:mediaChannelTrailTerminationPoint</type>
+        <administrative-state>inService</administrative-state>
+        <supporting-circuit-pack-name>DEG1-AMPTX</supporting-circuit-pack-name>
+        <supporting-port>DEG1-AMPTX-OUT</supporting-port>
+        <supporting-interface-list>OMS-DEG1-TTP-TX</supporting-interface-list>
+        <mc-ttp xmlns="http://org/openroadm/media-channel-interfaces">
+          <min-freq>193.25</min-freq>
+          <max-freq>193.35</max-freq>
+        </mc-ttp>
+      </interface>
+    </org-openroadm-device>
+  </config>
+</edit-config>
+
